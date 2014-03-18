@@ -1,0 +1,25 @@
+<window id="resultWin" title="Order Result" width="500px" border="normal"
+	apply="com.sopovs.moradanen.zkoss.popups.controller.ResultController">
+	<grid model="${arg.orderItems}">
+		<columns>
+			<column label="Order Number" align="center" />
+			<column label="Model" align="center" />
+			<column label="Make" align="center" />
+			<column label="Quantity" align="center" />
+			<column label="Subtotal Price" align="center" />
+		</columns>
+		<template name="model">
+			<row>
+				<label value="${each.itemId}" />
+				<label value="${each.car.model}" />
+				<label value="${each.car.make}" />
+				<label value="${each.quantity}" />
+				<label value="${each.subtotalPrice}" />
+			</row>
+		</template>
+	</grid>
+	Total Price: ${arg.totalPrice}
+	<hbox width="100%" pack="center">
+		<button id="closeButton" label="Close" />
+	</hbox>
+</window>

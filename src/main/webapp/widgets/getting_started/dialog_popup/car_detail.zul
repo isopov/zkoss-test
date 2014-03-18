@@ -1,0 +1,42 @@
+<vlayout width="300px">
+	<label value="${orderItem.car.model}" style="font-size: 14px; font-weight: bold;" />
+	<grid>
+		<rows>
+			<row>
+				Make:
+				<label value="${orderItem.car.make}" />
+			</row>
+			<row>
+				Origin:
+				<hbox align="center">
+					<label value="${orderItem.car.country}" />
+					<image src="/widgets/getting_started/img/${orderItem.car.country}.png" />
+				</hbox>
+			</row>
+			<row>
+				Type:
+				<label value="${orderItem.car.type}" />
+			</row>
+			<row>
+				Displacement:
+				<label value="${orderItem.car.engineDisplacement} c.c." />
+			</row>
+			<row>
+				Transmission:
+				<hbox align="center">
+					<image
+						src="/widgets/getting_started/img/${orderItem.car.autoTransmission ? 'at' : 'mt'}.png" />
+					<label value="${orderItem.car.autoTransmission ? 'AT' : 'MT'}" />
+				</hbox>
+			</row>
+			<row>
+				Accessories:
+				<label value="${orderItem.car.accessories}" />
+			</row>
+			<row>
+				Price:
+				<label value="${orderItem.unitPrice}" />
+			</row>
+		</rows>
+	</grid>
+</vlayout>

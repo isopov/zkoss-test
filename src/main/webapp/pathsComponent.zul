@@ -1,0 +1,3 @@
+<hbox width="100%" pack="center">
+	<button id="fooButton" label="Hello" />
+</hbox>

@@ -1,0 +1,8 @@
+<?component name="component" macroURI="pathsComponent.zul" inline="true"?>
+<window id="win" title="Component Paths Test" width="600px" border="normal"
+	use="com.sopovs.moradanen.zkoss.paths.PathsWindow">
+	<vlayout>
+		<label value="Надпись" />
+		<component />
+	</vlayout>
+</window>

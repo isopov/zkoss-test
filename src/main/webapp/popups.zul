@@ -1,0 +1,35 @@
+<window id="win" title="Confirm Your Order" width="600px" border="normal"
+	apply="com.sopovs.moradanen.zkoss.popups.controller.OrderController">
+	<vlayout>
+		<grid model="${win$composer.orderItemsModel}">
+			<columns>
+				<column label="Model" align="center" />
+				<column label="Make" align="center" />
+				<column label="Price" align="center" />
+				<column label="Quantity" align="center" />
+				<column label="Subtotal Price" align="center" />
+			</columns>
+			<template name="model">
+				<row popup="detail_${each.car.carId}, position=end_before" style="cursor:pointer">
+					<div>
+						<label value="${each.car.model}" />
+						<popup id="detail_${each.car.carId}">
+							<include src="/widgets/getting_started/dialog_popup/car_detail.zul"
+								orderItem="${each}" />
+						</popup>
+					</div>
+					<label value="${each.car.make}" />
+					<label value="${each.unitPrice}" />
+					<label value="${each.quantity}" />
+					<label value="${each.subtotalPrice}" />
+				</row>
+			</template>
+		</grid>
+		Total Price: ${win$composer.totalPrice}
+		<checkbox id="tosCheckbox" label=" I have read and accepted the terms of service." />
+		<hbox width="100%" pack="center">
+			<button id="submitButton" label="Submit" />
+			<button id="cancelButton" label="Cancel" />
+		</hbox>
+	</vlayout>
+</window>

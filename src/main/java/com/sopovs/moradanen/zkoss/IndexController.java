@@ -12,6 +12,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class IndexController {
 	@RequestMapping("/")
 	public String index(){
-		return "redirect:index.zul";
+		return "redirect:index.html";
 	}
 }
