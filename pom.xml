@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.0.0.RC4</version>
+		<version>1.1.1.RELEASE</version>
 	</parent>
 
 	<groupId>com.sopovs.moradanen</groupId>
@@ -15,8 +15,7 @@
 	<packaging>war</packaging>
 
 	<properties>
-		<zkoss.version>6.5.2</zkoss.version>
-
+		<zkoss.version>6.5.4</zkoss.version>
 	</properties>
 
 
