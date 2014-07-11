@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.zkoss.org/2005/zul http://www.zkoss.org/2005/zul/zul.xsd">
+
+	<window id="main" title="Drag And Drop Tree"
+	        apply="com.sopovs.moradanen.zkoss.DragAndDropTreeComposer"
+	        maximizable="true" maximized="true"
+	        closable="true" position="left,top"
+	        border="normal"
+	        vflex="true" hflex="true"
+	        contentStyle="background:lightgray"
+	        style="width:750px;">
+		<tree id="dragAndDropTree" />
+	</window>
+
+</zk>
