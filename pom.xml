@@ -15,7 +15,7 @@
 	<packaging>war</packaging>
 
 	<properties>
-		<zkoss.version>6.5.4</zkoss.version>
+		<zkoss.version>7.0.2</zkoss.version>
 	</properties>
 
 
