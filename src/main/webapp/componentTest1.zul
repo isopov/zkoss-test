@@ -1,0 +1,5 @@
+<zk>
+	<window apply="com.sopovs.moradanen.zkoss.ComponentComposer">
+		<button label="foo" id="fooButton"/>
+	</window>
+</zk>

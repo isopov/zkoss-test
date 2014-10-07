@@ -1,0 +1,5 @@
+<zk>
+	<window use="com.sopovs.moradanen.zkoss.ComponentWindow">
+		<label id="fooLabel"/>
+	</window>
+</zk>
