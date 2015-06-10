@@ -1,6 +1,6 @@
 <zk>
 	<window use="com.sopovs.moradanen.zkoss.ListBoxTest">
 		<listbox id="lbDict" mold="paging"
-		         autopaging="true" pageSize="10" vflex="true" hflex="true" sizedByContent="true" span="true"/>
+		         pageSize="10" vflex="true" hflex="true" sizedByContent="true" span="true"/>
 	</window>
 </zk>
