@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
-         xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
@@ -15,7 +16,7 @@
 	<packaging>war</packaging>
 
 	<properties>
-		<zkoss.version>7.0.2</zkoss.version>
+		<zkoss.version>7.0.6.FL.20150324</zkoss.version>
 	</properties>
 
 
@@ -67,6 +68,14 @@
 		</dependencies>
 	</dependencyManagement>
 
+	<repositories>
+		<repository>
+			<id>ZK CE</id>
+			<name>ZK CE Repository</name>
+			<url>http://mavensync.zkoss.org/maven2</url>
+		</repository>
+	</repositories>
+
 
 	<build>
 		<plugins>
@@ -94,7 +103,7 @@
 						</goals>
 						<configuration>
 							<rules>
-								<DependencyConvergence/>
+								<DependencyConvergence />
 								<bannedDependencies>
 									<excludes>
 										<exclude>commons-logging</exclude>
