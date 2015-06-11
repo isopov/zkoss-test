@@ -1,0 +1,6 @@
+<zk>
+	<window use="com.sopovs.moradanen.zkoss.AttributeTest">
+		<label id="testLabel" class="myTestButton">Hello World!</label>
+		<button id="testButton">FooBar</button>
+	</window>
+</zk>
