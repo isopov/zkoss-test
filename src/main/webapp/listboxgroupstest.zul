@@ -1,0 +1,10 @@
+<zk>
+	<window border="normal" title="hello"  apply ="com.sopovs.moradanen.zkoss.ListBoxGroupsTest">
+		<listbox id="lbDict" vflex="true" hflex="true">
+			<listhead>
+				<listheader label="group" />
+				<listheader label="item" />
+			</listhead>
+		</listbox>
+	</window>
+</zk>
